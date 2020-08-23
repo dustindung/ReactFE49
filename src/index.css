@@ -10,11 +10,11 @@
   height: 500px;
 }
 
-.content{
-  background-color: darkgoldenrod;
-  color: black;
-  height: 500px;
-}
+  /* .content{
+    background-color: darkgoldenrod;
+    color: black;
+    height: 500px;
+  } */
 
 .footer{
   background-color: silver;
