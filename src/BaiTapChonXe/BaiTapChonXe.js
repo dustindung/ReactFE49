@@ -27,7 +27,7 @@ export default class BaiTapChonXe extends Component {
                             <div className="card-body">
                                 <div onClick = {() => {
                                     this.handleChangeColorCar('black')
-                                    // this.setState({
+                                    // this.setState({ 
                                     //     imgCar:'./img/CarBasic/products/black-car.jpg'
                                     // })
                                 }} className="row p-2" style={{ border: '1px solid #EEE', cursor: 'pointer' }}>

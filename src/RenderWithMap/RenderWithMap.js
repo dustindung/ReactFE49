@@ -43,6 +43,24 @@ export default class RenderWithMap extends Component {
 
         return arrJSXProduct;
 
+        
+
+    }
+
+    renderTable = () =>{
+        return this.productList.map((item, index) => {
+            return <tr key={index}>
+                <td>{item.id}</td>
+                <td>{item.name}</td>
+                <td>{item.price}</td>
+                <td>
+                    <button className="text-danger">Xoa</button>
+                </td>
+
+            </tr>
+        })
+
+         
     }
 
     render() {
@@ -54,10 +72,22 @@ export default class RenderWithMap extends Component {
             //     FrontEnd49
             // </div> ]
 
-            <div>
-                <div className="row">
+            <div className="container">
+                {/* <div className="row">
                     {this.renderProduct()}
-                </div>
+                </div> */}
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderTable()}
+                    </tbody>
+                </table>
             </div>
         )
     }
