@@ -25,7 +25,7 @@ export default class BaiTapRenderPhim extends Component {
         return (
             <div style={{ backgroundImage: 'url("./img/avenger.jpg")', backgroundSize: '100%', width: '100%', minHeight: 1000 }} >
 
-                <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: 'rgba(108, 99, 171,.5)' }}>
+                <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: 'rgba(108, 99, 171, .5)' }}>
                     <a className="navbar-brand" href="#">CYBERLEARN MOVIE</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />

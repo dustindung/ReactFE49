@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import SanPham from './SanPham'
 
 export default class BaiTapQLSP extends Component {
 
@@ -11,7 +12,7 @@ export default class BaiTapQLSP extends Component {
     renderSanPham = () => {
         return this.props.mangSP?.map((item, index) => {
             return <div className="col-4" key={index}>
-                <div className="card text-left" >
+                {/* <div className="card text-left" >
                     <img className="card-img-top" src={item.hinhAnh} style={{ height: 250 }} alt={item.hinhAnh} />
                     <div className="card-body">
                         <h4 className="card-title">{item.tenSP}</h4>
@@ -20,7 +21,9 @@ export default class BaiTapQLSP extends Component {
                             this.xemChiTiet(item)
                         }}>Xem Chi Tiet</button>
                     </div>
-                </div>
+                </div> */}
+
+                <SanPham sp={item} xemChiTiet={this.xemChiTiet}></SanPham>
             </div>
 
         })
@@ -35,8 +38,6 @@ export default class BaiTapQLSP extends Component {
     }
 
     render() {
-
-
 
         //Bóc tác phần tử ES6 destruction, xem lại slide ES^
         let { maSP, tenSP, hinhAnh, manHinh, cameraTruoc, cameraSau, heDieuHanh, gia, ram, rom } = this.state.sanPhamChiTiet;
