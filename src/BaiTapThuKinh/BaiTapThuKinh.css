@@ -1,0 +1,23 @@
+.cardThuKinh{
+    position: relative;
+}
+
+.cardThuKinh-body{
+    position: absolute;
+    bottom: -5px;
+}
+
+.cardThuKinh-title{
+    color: blue;
+}
+
+.cardThuKinh-text{
+    color: white;
+}
+
+.cardImgThuKinh{
+    position: absolute;
+    top: 64px;
+    left: 66px;
+    
+}

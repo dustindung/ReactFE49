@@ -63,15 +63,15 @@ export default class GioHang extends Component {
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <td colSpan="5"></td>                                      
-                                        <td>Tổng tiền</td>
-                                        <td>
-                                            {
-                                                this.props.gioHang.reduce((tongTien, spGH, index) => {
-                                                    return tongTien += spGH.gia * spGH.soLuong
-                                                }, 0).toLocaleString()
-                                            }
-                                        </td>
+                                            <td colSpan="5"></td>
+                                            <td>Tổng tiền</td>
+                                            <td>
+                                                {
+                                                    this.props.gioHang.reduce((tongTien, spGH, index) => {
+                                                        return tongTien += spGH.gia * spGH.soLuong
+                                                    }, 0).toLocaleString()
+                                                }
+                                            </td>
                                         </tr>
                                     </tfoot>
                                 </table>
