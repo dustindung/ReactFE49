@@ -11,10 +11,10 @@ export default class BaiTapRenderPhim extends Component {
         return data.map((item, index) => {
             return <div className="col-2 mb-5" key={index}>
                 <div className="card bg-dark text-white text-left" >
-                    <img src={item.hinhAnh} style={{height:300}} className="card-img-top" alt={item.hinhAnh} />
+                    <img src={item.hinhAnh} style={{ height: 300 }} className="card-img-top" alt={item.hinhAnh} />
                     <div className="card-body">
-                        <h5 className="card-title" style={{height:50}}>{item.tenPhim.length > 20 ? <span>{item.tenPhim.substring(0,20)}...</span> : <span>{item.tenPhim}</span> }</h5>
-                        <p className="card-text" style={{height:125}}>{item.moTa.length > 75 ? <span>{item.moTa.substring(0,75)}...</span> : <span>{item.moTa}</span> }</p>
+                        <h5 className="card-title" style={{ height: 50 }}>{item.tenPhim.length > 20 ? <span>{item.tenPhim.substring(0, 20)}...</span> : <span>{item.tenPhim}</span>}</h5>
+                        <p className="card-text" style={{ height: 125 }}>{item.moTa.length > 75 ? <span>{item.moTa.substring(0, 75)}...</span> : <span>{item.moTa}</span>}</p>
 
                     </div>
                 </div>
@@ -65,9 +65,9 @@ export default class BaiTapRenderPhim extends Component {
 
                     <h3 className="mt-2 mb-2 text-center display-4 text-light">Danh Sach Phim</h3>
                     <div className="container-fluid">
-                    <div className="row">
-                        {this.renderCardMovie()}
-                    </div>
+                        <div className="row">
+                            {this.renderCardMovie()}
+                        </div>
                     </div>
                 </div>
             </div>

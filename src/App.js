@@ -15,6 +15,7 @@ import DemoProps from './Props/DemoProps';
 import BaiTapQLSP from './Props/BaiTapQLSP';
 import BaiTapGioHang from './Props/BaiTapGIoHang/BaiTapGioHang';
 import BaiTapThuKinh from './BaiTapThuKinh/BaiTapThuKinh';
+import BaiTapGioHangRedux from './BaiTapRedux/BaiTapGioHangRedux/BaiTapGioHangRedux';
 
 
 function App() {
@@ -77,7 +78,9 @@ function App() {
 
       {/* <BaiTapGioHang></BaiTapGioHang> */}
 
-      <BaiTapThuKinh></BaiTapThuKinh>
+      {/* <BaiTapThuKinh></BaiTapThuKinh> */}
+
+      <BaiTapGioHangRedux></BaiTapGioHangRedux>
       
     </div>
   );
