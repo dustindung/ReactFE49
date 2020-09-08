@@ -1,0 +1,10 @@
+.content {
+  background-color: black;
+  color: orange;
+  padding: 15px;
+}
+
+.content .text {
+  color: green;
+}
+/*# sourceMappingURL=Styling.module.css.map */
