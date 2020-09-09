@@ -16,6 +16,7 @@ import BaiTapQLSP from './Props/BaiTapQLSP';
 import BaiTapGioHang from './Props/BaiTapGIoHang/BaiTapGioHang';
 import BaiTapThuKinh from './BaiTapThuKinh/BaiTapThuKinh';
 import BaiTapGioHangRedux from './BaiTapRedux/BaiTapGioHangRedux/BaiTapGioHangRedux';
+import BaiTapGameTaiXiu from './BaiTapRedux/BaiTapGameTaiXiu/BaiTapGameTaiXiu';
 
 
 function App() {
@@ -80,7 +81,9 @@ function App() {
 
       {/* <BaiTapThuKinh></BaiTapThuKinh> */}
 
-      <BaiTapGioHangRedux></BaiTapGioHangRedux>
+      {/* <BaiTapGioHangRedux></BaiTapGioHangRedux> */}
+
+      <BaiTapGameTaiXiu></BaiTapGameTaiXiu>
       
     </div>
   );
