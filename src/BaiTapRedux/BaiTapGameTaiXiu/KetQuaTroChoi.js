@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 class KetQuaTroChoi extends Component {
     render() {
         const { banChon, soBanThang, tongSoBanChoi, mangXucXac } = this.props;
-        console.log(this.props.banChonCom)
+        
 
         return (
             <div>

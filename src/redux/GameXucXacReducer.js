@@ -32,7 +32,7 @@ export const gameXucXacReducer = (state = stateDefault, action) => {
             //thực hiện random 3 lần để tạo ra 3 viên xúc xắc ngẫu nhiên đưa vào mảng
             for (let i = 0; i < 3; i++) {
                 let soNgauNhien = Math.floor(Math.random() * 6);
-                //từ ngẫu nhiên tạo ra xúc xắc ngẫu nhiên
+                //từ số ngẫu nhiên tạo ra xúc xắc ngẫu nhiên
                 let xucXacNgauNhien = mangXucXac[soNgauNhien];
                 mangXucXacNgauNhien.push(xucXacNgauNhien);
             }
@@ -47,7 +47,7 @@ export const gameXucXacReducer = (state = stateDefault, action) => {
             }, 0);
 
             //so sánh tongDiem và giá trị người dùng chọn
-            //nếu tổng điểm lớn hơn 9 và banChon = true => tahngws
+            //nếu tổng điểm lớn hơn 9 và banChon = true => tăng
             //nếu tổng điểm <= 9 và banChon = false => thua
             if ((tongDiem > 9 && state.banChon) || (tongDiem <= 9 && !state.banChon)) {
                 state.soBanThang += 1;

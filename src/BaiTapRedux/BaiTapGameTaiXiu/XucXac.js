@@ -36,7 +36,7 @@ class XucXac extends Component {
         )
     }
 }
-//Lấy dữ lieej từ redux về
+//Lấy dữ liệu từ redux về
 const mapStateToProps = state => {
     return {
         mangXucXac: state.GameXucXacReducer.mangXucXac,
@@ -59,4 +59,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(XucXac)
+ export default connect(mapStateToProps, mapDispatchToProps)(XucXac)
