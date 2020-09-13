@@ -63,3 +63,8 @@
 .buttonBaoBuaKeo:hover {
     border: solid 3px orange;
 }
+
+
+.active{
+    border: 10px solid orange;
+}

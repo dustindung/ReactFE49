@@ -88,9 +88,9 @@ function App() {
 
       {/* <BaiTapGameTaiXiu></BaiTapGameTaiXiu> */}
 
-      {/* <BaiTapOanTuTi></BaiTapOanTuTi> */}
+      <BaiTapOanTuTi></BaiTapOanTuTi>
 
-      <DanhSachSinhVien></DanhSachSinhVien>
+      {/* <DanhSachSinhVien></DanhSachSinhVien> */}
       
     </div>
   );

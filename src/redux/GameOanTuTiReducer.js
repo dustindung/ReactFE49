@@ -20,7 +20,8 @@ export const GameOanTuTiReducer = (state = stateDefault, action) => {
     switch (action.type) {
         case 'ONCLICK_LUA_CHON': {
             state.banChon = action.ketQua;
-            state.mangBaoBuaKeo.duocChon = true;
+           
+        
             // document.getElementsByTagName('img').style.borderColor = "orange";
             return { ...state };
         }
